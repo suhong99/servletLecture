@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- <form action="hello" method="get">
+	url-pattern 을 action에 넣어야 함
+	name : <input type="text" name="name"><br>
+	age : <input type="text" name="age"><br>
+	<input type="submit" value = "HelloServlet Get"> 
+	</form> -->
+</body>
+</html>

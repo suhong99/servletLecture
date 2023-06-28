@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+</head>
+<body>
+
+<form action="Hello" method="post">
+이름 : <input type="text" name="name"><br>
+나이 : <input type="text" name="age"><br>
+주소 : <input type="text" name="address"><br>
+
+<input type="submit" value="이동">
+</form>
+</body>
+</html>

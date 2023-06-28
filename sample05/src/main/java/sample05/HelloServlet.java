@@ -1,0 +1,38 @@
+package sample05;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HelloServlet extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		req.setCharacterEncoding("utf-8");
+		
+		String name = req.getParameter("name");
+		String sage = req.getParameter("age");
+		int age = Integer.parseInt(sage);
+		String address = req.getParameter("address");
+		
+		System.out.println(name+" "+age + " " + address);
+		Human human = new Human(name,age, address);
+		
+		// ����!
+		req.setAttribute("human", human);
+		
+		
+		//servlet sample�� �̵��ض�
+		req.getRequestDispatcher("sample").forward(req, resp);
+	}
+	
+}

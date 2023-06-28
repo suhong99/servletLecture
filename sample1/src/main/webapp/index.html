@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  
+	Servlet = Server + Applet
+	
+	GET 
+		url(주소) 뒤에 parameter가 만들어진다
+			http://localhost:9000/sample01/index.html?이름=값&나이=값
+		보안성이 떨어진다.
+		POST방식에 비해서 전송속도가 빠르다.
+		길이의 제한이 있음.(255문자 이상일시 문제가 생김)
+		
+	POST
+		url(주소) 뒤에 parameter가 보이지 않는다.
+			http://localhost:9000/sample01/index.html
+		전송 속도가느리다.
+		보안적인 요소에 사용해야 한다.
+		길이의 제한 없음
+		
+-->
+
+<form action="Hello" method="get">
+	<input type="submit" value="HelloServelet GET">
+</form>
+
+<form action="Hello" method="post">
+	<input type="submit" value="HelloServelet POST">
+</form>
+<br>
+
+<a href="Hello">HelloServlet move</a>  <!-- GET으로 감 -->
+
+<br><br>
+
+<button type="button" onclick="move()">HelloServlet move</button>
+<script type="text/javascript">
+	function move(){
+		location.href="HEello";
+	}
+</script>
+</body>
+</html>
